@@ -16,8 +16,9 @@ do
 	pat4="^[0-9]{2}\s[0-9]{10}$"
 	pat5="^[a-zA-Z0-9]{8,}$"
 	pat6="^([a-zA-Z0-9]*[A-Z]+[a-zA-Z0-9]*)$"
+	pat7="^([a-zA-Z0-9]*[0-9]+[a-zA-Z0-9]*)$"
 
-	if [[ $pass =~ $pat6 ]]
+	if [[ $pass =~ $pat7 ]]
 	then
 		echo "valid"
 	else
